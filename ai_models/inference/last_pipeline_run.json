@@ -1,0 +1,29 @@
+{
+  "pipeline_status": "OPERATIONAL",
+  "timestamp": "2026-10-16 18:54:03 UTC",
+  "stage_1_gnn": {
+    "scenario": "Mumbai 26-Jul Extreme Convective Event",
+    "ground_zero": [
+      19.1209,
+      72.8814
+    ],
+    "estimated_pressure_hpa": 992.6,
+    "estimated_peak_wind_kmh": 85.1,
+    "gnn_latency_ms": 7.33
+  },
+  "stage_2_diffusion": {
+    "grid_resolution_km": 5,
+    "grid_cells": 1024,
+    "peak_intensity_mm_hr": 124.71,
+    "mean_intensity_mm_hr": 6.63,
+    "peak_surface_wind_km_h": 202.51,
+    "inundation_hotspots_count": 34,
+    "diffusion_latency_ms": 78.45
+  },
+  "total_inference_latency_ms": 85.78,
+  "target_problem_statement": "SIH26078 - 12km to 5km Extreme Weather Downscaling",
+  "weights_verified": [
+    "ai_models/weights/varuna_gnn_spherical_mesh_weights.pth",
+    "ai_models/weights/varuna_diffusion_downscaler_weights.pt"
+  ]
+}

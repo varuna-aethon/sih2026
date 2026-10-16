@@ -1,1 +1,40 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build artifacts
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 .vercel
+
+# Editor directories and system files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Ensure AI models, weights, and inference pipelines are tracked
+!ai_models/
+!ai_models/weights/
+!ai_models/weights/*.pth
+!ai_models/weights/*.pt
+!public/models/*.json
